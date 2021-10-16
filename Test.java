@@ -4,7 +4,7 @@ public void test()
 
         String input = "what is this about?";
 
-        String algorithm = "AES/CBC/PKCS5Padding";
+        String algorithm = "AES/CBC/PKCS7Padding";
         String cipherText = AESUtil.encrytData(algorithm, "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxx", input);
         String plainText = AESUtil.decryptData(algorithm, "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxx", cipherText);
 
